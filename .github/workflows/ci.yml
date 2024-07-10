@@ -33,4 +33,7 @@ jobs:
       - run: |
             echo "${{ env.action_state }}" # This will output 'yellow'
 
+      - run: |
+            echo "{markdown content}" >> $GITHUB_STEP_SUMMARY
+             
       
